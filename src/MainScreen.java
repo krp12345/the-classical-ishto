@@ -10,7 +10,9 @@ public class MainScreen  extends Application {
     private int numberOfPlayers;
     
     public MainScreen() {
-        this.numberOfPlayers = 50;
+      //maximum number of player is 4.
+      this.numberOfPlayers = 4;
+      
     }
     
     int getPlayerNumber(){
