@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" 
+      xmlns="http://javafx.com/javafx/2.2"
+      spacing="25" 
+      alignment="center" 
+      minWidth="1000"
+      minHeight="500"
+      
+>
+    <Button 
+        fx:id="play" 
+        text="WE WANT TO PLAY NOW"
+        minHeight="50"
+        
+    >
+        
+    </Button>
+    
+    <Button 
+        fx:id="rules" 
+        text="WE WANT TO KNOW THE RULES"
+        minHeight="50"
+            
+    >
+       
+    </Button>
+    
+</VBox>    
