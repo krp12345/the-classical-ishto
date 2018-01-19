@@ -1,42 +1,23 @@
-/*
-  welcome screen class 
-*/
+import java.io.File;
+import java.io.FileInputStream;
 import javafx.application.Application;
-import javafx.scene.image.Image;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+import javafx.scene.layout.VBox;
 public class MainScreen  extends Application {
-
-    private int numberOfPlayers;
-    
-    public MainScreen() {
-      //maximum number of player is 4.
-      this.numberOfPlayers = 4;
-      
-    }
-    
-    int getPlayerNumber(){
-        return this.numberOfPlayers;
-    }
-    
-    public static void main(String[] args) throws Exception {
-        Application.launch();
-        
-    }
-
-    //start method is abstract method that should be overrided.
-    //only argument is Stage object.
-    // In our application, Stage object is named primaryStage object 
-    //which is created by platform itself.
+    private Stage stg;
+    @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Welcome Screen");
-        
-        primaryStage.setFullScreen(true);
-        
-        primaryStage.getIcons().add(new Image(MainScreen.class.getResourceAsStream("icon.png")));
-        //here icon is temporary . proper design of icon required
+        this.stg=primaryStage;
+        FXMLLoader fldr=new FXMLLoader();
+        FileInputStream fl=new FileInputStream(new File("/home/rushikesh/NetBeansProjects/the classical ishto/src/welcome_screen.fxml"));
+        VBox vb=(VBox)fldr.load(fl);
+        Scene scn=new Scene(vb);
+        primaryStage.setScene(scn);
         primaryStage.show();
-        //show method make stage visible
     }
-
+    private void onRuleButtonClickActions(){
+        
+    }
 }
