@@ -11,7 +11,10 @@ public class MainScreen  extends Application {
     public void start(Stage primaryStage) throws Exception {
         this.stg=primaryStage;
         FXMLLoader fldr=new FXMLLoader();
+        
         FileInputStream fl=new FileInputStream(new File("/home/rushikesh/NetBeansProjects/the classical ishto/src/welcome_screen.fxml"));
+        // change path of fxml file. 
+        
         VBox vb=(VBox)fldr.load(fl);
         Scene scn=new Scene(vb);
         primaryStage.setScene(scn);
