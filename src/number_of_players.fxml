@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/2.2"
+      alignment="CENTER"
+      spacing="50" fx:controller="ishto.NumberOfPlayers">
+
+    <fx:define>
+        <ToggleGroup fx:id="myToggleGroup"/>
+    </fx:define>
+
+    <children>
+        <RadioButton text="player 2" minHeight="40" toggleGroup="$myToggleGroup">
+            <font>
+                <Font name="Verdana" size="40.0" ></Font>
+            </font>
+        </RadioButton>
+        <RadioButton text="player 3" minHeight="40" toggleGroup="$myToggleGroup">
+            <font>
+                <Font name="Verdana" size="40.0" ></Font>
+            </font>
+        </RadioButton>
+        <RadioButton text="player 4" minHeight="40" toggleGroup="$myToggleGroup">
+            <font>
+                <Font name="Verdana" size="40.0" ></Font>
+            </font>
+        </RadioButton>
+    </children>
+
+    <HBox spacing="25" translateY="100">
+
+        <Button text="Back To Main Menu" minHeight="50" translateX="50" onAction="#onBackButtonAction">
+            <font>
+                <Font name="Verdana" size="25.0" ></Font>
+            </font>
+        </Button>
+
+        <Button text="Continue" minHeight="50" translateX="800" onAction="#onContinueClicked">
+            <font>
+                <Font name="Verdana" size="25.0" ></Font>
+            </font>
+        </Button>
+    </HBox>
+
+</VBox>
