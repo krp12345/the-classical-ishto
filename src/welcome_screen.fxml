@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" 
-      xmlns="http://javafx.com/javafx/2.2"
-      spacing="25" 
-      alignment="center" 
-      minWidth="1000"
-      minHeight="500"
-      
->
-    <Button 
-        fx:id="play" 
-        text="WE WANT TO PLAY NOW"
-        minHeight="50"
-        
-    >
-        
+<VBox alignment="center" minHeight="Infinity" stylesheets="@mainBG.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ishto.MainScreenController">
+    <Text stroke="BLACK" text="The Classical Ishto" translateY="-100">
+        <font>
+            <Font name="Verdana" size="50.0" /> 
+        </font>
+    </Text>
+    <Button fx:id="play" minHeight="70" minWidth="300" onAction="#onplayNowButtonClickAction" text="Play Now!" translateY="50">
+        <font>
+            <Font name="Verdana" size="20.0" />
+        </font>
     </Button>
-    
-    <Button 
-        fx:id="rules" 
-        text="WE WANT TO KNOW THE RULES"
-        minHeight="50"
-            
-    >
-       
+    <Button fx:id="rule" minHeight="50" onAction="#onRulesButtonClickedAction" text="Know The Rules" translateY="100">
+        <font>
+            <Font name="Verdana" size="20.0" />
+        </font>
     </Button>
-    
-</VBox>    
+</VBox>
