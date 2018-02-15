@@ -1,36 +1,27 @@
 package ishto;
-import java.io.File;
-import java.io.FileInputStream;
+import ishto.logic.Game;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
-
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 public class ApplicationStarter  extends Application {
-
-    public static Scene mainScn;
-
-    public static Stage prStage;
-
+    public static VBox mainScnVBox;
+    public static Stage primaryStage;
+    public static Game game;
     public void start(Stage primaryStage) throws Exception {
-        prStage=primaryStage;
-        FXMLLoader mainScreenFXMLLOader;
-        mainScreenFXMLLOader=new FXMLLoader();
-        FileInputStream fileStreamMainScreen;
-        fileStreamMainScreen=new FileInputStream(new File("/home/rushikesh/IdeaProjects/the classical ishto/src/ishto/res/fxml/welcome_screen.fxml"));
-        System.out.println("could open file");
+        ApplicationStarter.primaryStage =primaryStage;
+        FXMLLoader mainScreenFXMLLoader;
+        mainScreenFXMLLoader=new FXMLLoader(getClass().getResource("controller/fxml/main_screen.fxml"));
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         VBox mainScreenVBox;
-        mainScreenVBox= mainScreenFXMLLOader.load(fileStreamMainScreen);
+        primaryStage.getIcons().add(new Image(ishto.controller.fxml.ResourceHelper.class.getResourceAsStream("main.png")));
+        mainScreenVBox= mainScreenFXMLLoader.load();
         Scene mainScene = new Scene(mainScreenVBox);
-        primaryStage.setHeight(2000);
-        primaryStage.setWidth(2000);
-
-        mainScn=mainScene;
-
+        mainScnVBox =mainScreenVBox;
         primaryStage.setScene(mainScene);
-
         primaryStage.show();
-
     }
 }
