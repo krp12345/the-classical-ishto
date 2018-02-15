@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.ImagePattern?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.Pane?>
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ishto.controller.GameController">
+    <HBox alignment="BASELINE_RIGHT">
+        <Circle onMouseClicked="#onMinimizeButtonClicked" radius="15">
+            <fill>
+                <ImagePattern>
+                    <image>
+                        <Image url="@icon3.png" />
+                    </image>
+                </ImagePattern>
+            </fill>
+        </Circle>
+    </HBox>
+    <VBox alignment="CENTER">
+        <padding>
+            <Insets bottom="15" top="15" />
+        </padding>
+    <Circle radius="25" style="-fx-fill: blue;">
+    </Circle>
+    </VBox>
+    <HBox>
+        <VBox alignment="CENTER">
+            <padding>
+                <Insets left="15" right="15" />
+            </padding>
+            <Circle radius="25" style="-fx-fill: red;" />
+        </VBox>
+        <GridPane gridLinesVisible="true"  prefHeight="500" prefWidth="500">
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <GridPane prefHeight="100"
+                      onMouseClicked="#mouseEntered"
+                      prefWidth="100"
+                      style="-fx-fill: red;"
+                      GridPane.columnIndex="2"
+                      GridPane.rowIndex="0">
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-fill: blue;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-fill: blue;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-fill: blue;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="3" style="-fx-fill: blue;">
+
+                </Circle>
+
+            </GridPane>
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered"  prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="0" GridPane.rowIndex="2" >
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-fill: red;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-fill: red;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-fill: red;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="3" style="-fx-fill: red;">
+
+                </Circle>
+            </GridPane>
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="4" GridPane.rowIndex="2" >
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-fill: black;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-fill: black;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-fill: black;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="3" style="-fx-fill: black;">
+
+                </Circle>
+            </GridPane>
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="4" >
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-fill: green;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-fill: green;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-fill: green;">
+
+                </Circle>
+                <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="3" style="-fx-fill: green;">
+
+                </Circle>
+            </GridPane>
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <GridPane prefHeight="100" onMouseClicked="#mouseEntered" prefWidth="100" style="-fx-fill: red;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+        <VBox alignment="CENTER">
+            <padding>
+                <Insets left="15" right="15" />
+            </padding>
+            <Circle radius="25" />
+        </VBox>
+    </HBox>
+    <VBox alignment="CENTER">
+        <padding>
+            <Insets bottom="15" top="15" />
+        </padding>
+        <Circle radius="25" style="-fx-fill: green;">
+        </Circle>
+    </VBox>
+    <HBox>
+        <Button text="Stop Game" onAction="#onStopGame">
+        </Button>
+        <Pane HBox.hgrow="ALWAYS">
+
+        </Pane>
+        <Button text="New Game" onAction="#onNewGame">
+
+        </Button>
+    </HBox>
+
+
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20">
+        </Insets>
+    </padding>
+</VBox>
