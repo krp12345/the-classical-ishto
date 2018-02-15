@@ -49,7 +49,6 @@
 
                 </Circle>
                 <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-fill: blue;">
-
                 </Circle>
                 <Circle radius="12.5" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-fill: blue;">
 
