@@ -30,7 +30,6 @@
             </font>
         </Text>
         <Pane HBox.hgrow="ALWAYS">
-
         </Pane>
         <Button onAction="#onMinimizeButtonClick">
             <graphic>
